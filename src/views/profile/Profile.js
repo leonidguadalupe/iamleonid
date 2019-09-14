@@ -3,11 +3,17 @@ import React from 'react';
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+// @material-ui/icons components
+import Extension from "@material-ui/icons/Extension";
+import School from "@material-ui/icons/School"
+import Terrain from "@material-ui/icons/Terrain";
+import Work from "@material-ui/icons/Work";
 // components
 import Button from "components/CustomButtons/Button.js";
 import Clearfix from "components/Clearfix/Clearfix.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
+import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import leonid from "assets/img/leonid.jpg";
@@ -15,7 +21,10 @@ import leonid from "assets/img/leonid.jpg";
 import profileComponentStyle from "assets/jss/profileComponentStyle.js";
 
 // Profile sections
-// todo
+import HobbySectionComponent from "./sections/HobbyTab.js";
+import StudyTabComponent from "./sections/StudyTab.js";
+import WorkTabComponent from "./sections/WorkTab.js";
+import TechTabComponent from "./sections/TechTab.js";
 
 const useStyles = makeStyles(profileComponentStyle);
 
@@ -80,9 +89,51 @@ export default function ProfileViewComponent() {
                 continuously growing in a corporate environment. I dream of living 
                 and working in Japan in the future.{" "}
             </p>
+            <Clearfix />
           </div>
-          <div className={classes.container}>
-            
+          <div className={classes.profileTabs}>
+            <GridContainer justify="center">
+              <h4 className={classes.title}>About Me</h4>
+            </GridContainer>
+            <NavPills
+              alignCenter
+              color="primary"
+              tabs={[
+                {
+                  tabButton: "Work",
+                  tabIcon: Work,
+                  tabContent:(
+                    <WorkTabComponent 
+                      classes={classes} />
+                  )
+                },
+                {
+                  tabButton: "School",
+                  tabIcon: School,
+                  tabContent:(
+                    <StudyTabComponent 
+                      classes={classes} />
+                  )
+                },
+                {
+                  tabButton: "Tech",
+                  tabIcon: Extension,
+                  tabContent:(
+                    <TechTabComponent 
+                      classes={classes} />
+                  )
+                },
+                {
+                  tabButton: "Hobbies",
+                  tabIcon: Terrain,
+                  tabContent:(
+                    <HobbySectionComponent 
+                      classes={classes} />
+                  )
+                }
+              ]}
+            />
+
           </div>
         </div>
       </div>

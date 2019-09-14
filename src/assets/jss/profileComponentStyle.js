@@ -71,7 +71,7 @@ import {
       ...mlAuto,
       ...mrAuto
     },
-    collections: {
+    workhistory: {
       marginTop: "20px"
     },
     cardBody: {
