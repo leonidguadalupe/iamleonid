@@ -7,7 +7,8 @@ import {
     main,
     whiteColor,
     mainRaised,
-    grayColor
+    grayColor,
+    hexToRgb
   } from "assets/jss/material-kit-pro-react.js";
   
   import imagesStyle from "assets/jss/imagesStyles.js";
@@ -20,7 +21,14 @@ import {
       ...cardTitle,
       color: whiteColor + "  !important"
     },
-    cardTitle,
+    category: {
+      color: "rgba(" + hexToRgb(whiteColor) + ", 0.7) !important",
+      marginTop: "50px"
+    },
+    cardTitle: {
+      ...cardTitle,
+      color: whiteColor + "  !important"
+    },
     profile: {
       textAlign: "center",
       "& img": {

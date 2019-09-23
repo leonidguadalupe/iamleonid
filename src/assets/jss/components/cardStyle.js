@@ -69,7 +69,7 @@ const cardStyle = {
       color: whiteColor + " !important"
     },
     "& p": {
-      color: "rgba(" + hexToRgb(whiteColor) + ",0.7)!important"
+      color: "rgba(" + hexToRgb(whiteColor) + ",0.9)!important"
     },
     "&:after": {
       position: "absolute",

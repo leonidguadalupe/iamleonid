@@ -45,7 +45,6 @@ export default function ProfileViewComponent() {
     classes.imgRoundedCircle,
     classes.imgFluid
   );
-  const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return(
     <div>
       <Parallax
@@ -112,14 +111,6 @@ export default function ProfileViewComponent() {
                   tabIcon: School,
                   tabContent:(
                     <StudyTabComponent 
-                      classes={classes} />
-                  )
-                },
-                {
-                  tabButton: "Tech",
-                  tabIcon: Extension,
-                  tabContent:(
-                    <TechTabComponent 
                       classes={classes} />
                   )
                 },

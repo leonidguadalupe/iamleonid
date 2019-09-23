@@ -1,7 +1,6 @@
 import React from 'react';
 //components
 import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
 import CardAvatar from "components/Card/CardAvatar.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -16,7 +15,8 @@ export default function StudyTabComponent(props) {
       title: "Masters in Management",
       year: "2014",
       description: "I studied management for 2 years. However I haven't finished\
-        this as I was too busy with work. I am lacking computer",
+        this as I was too busy with work. All that's left here is to finish the \
+        strategic plan(non-thesis) for the final requirement.",
     },
     {
       img: studyImage1,
