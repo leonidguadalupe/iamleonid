@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iamleonid-deployment
+spec:
+  selector:
+    matchLabels:
+      app: iamleonid
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: iamleonid
+        env: development
+    spec:
+      containers:
+      - name: iamleonid
+        image: gcr.io/hyperionleonid/app:v1.2
+        ports:
+        - containerPort: 80
+        env:
+        - name: PORT
+          value: "80"
+        - name: LOG_LEVEL
+          value: "info"
+        - name: NODE_ENV
+          value: "development"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: iamleonid-service
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+  selector:
+    app: iamleonid
