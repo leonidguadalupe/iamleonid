@@ -1,21 +1,21 @@
 language: node_js
 node_js:
-  - node
+- node
 cache:
   directories:
-    - node_modules
+  - node_modules
 script:
-  - npm run build
-  - ls build
+- npm run build
+- ls build
 deploy:
   provider: s3
   access_key_id: AKIASSYM3Q5YYQV6LLHG
   secret_access_key:
-    secure: C1Zf7yu7Z2Ud+og2B/yB21GV/s03+7m91esSIvQsbAZD+D372uXBuwIDnbo1hYKrtjYiOV9BjtcYkAIYhGIrvZD1RY10mLlWMPlZaykp3qoQKeCDo0ShYGIbIVI4+aZwY3chQo3JLoUZ9aWccAz7tKPKY71NoF1PYkzD+8oq57k7cQ7uU2nzNW2FCqu9jW0IOgm+aCR97thHwIeVaZq5h9/A9cwdn0sThh0GibhCvjFWejmzsUyFhfPG70oRY9zUQw0Ljskhe9Z4FIP4CoGTFECWgSnqJ202hiPGwPyB9XFqfJDq5+9O3kBKn5Nr2h3UcQGFxNL+y+mE5aLl7hiJskHJDPqJ0dH7eozz1r8dLO27xKErcTDCudRPuYj5RmsKKaf+i2eAIzUzqq4sr50hUYJ3DZ9qEvvhwrCPTGmbOeenDthafJfg/wW79SwG4I7Qwq9j2gUke7y8Tpl4vnwOs0gkNzer1n3gvP8RVQWBALRkJ93/wOQ2HnYmnzzrkaIwCOk9y3W94nIm0N0s/bq59PiSnxQrTfiYEgE2xJmplDjY7/z38+BI7HmVnzq1k9FaceuMTTtBd5KC1vstz8i5IMLrBJIbjnEpCiCTeYppsvB7C/asr/RA7bc3KCkAFPa3QtrbQ4P3fuC+7BbA2/YvE13Z5389x/CNPInYV8Eu3yw=
+    secure: oZ22DriPXDA+QRsyKZCuZoKRumFvv50+xUibICLyhF5aKXQCSkWykB2oFwuh2vwOPGNCGyIlAxUSVq6WlmmC34wrEPIiSopj9T5L9Ui/IhxLBbuG/FUuMHj5jufvDa858AdMpsZcjXKZSzwp5UAEqBM3t48aHup7NskAb3zUzhxa7Hm8XR2/z6bTd271+hAg7ObygxjsWa1yeDFYudX5THJER8mhW3gN3dmLM0XPaVAnH53cBJT3qfdYCRR7BOu8Si1C7m4os2u3huipw2DLIAiDrg7nnPqQbVNnH/AXViTVJ0iDiWNsTIP+tnorUUZp6Ga6KYd1NGYLraSSWdX53iBVKDkq1ntANLgReTXd7tLyi6wQMlFKkQleNvNW5IM/JQcxfnNBrbL3nMBJscNNddFS11XwGu6nXPIqxPh0yO/J8LFmpXS6r+DG7AhsoGyBtiT5WmuHzJ1vFR2TPbfVHbShBGZ0qy7sps3BdsZ15fBwsoQmyW6cdba6kD64XNdfJ1QWlwoDRZbHctNJw/ck4ef7+2ATdIouaEcHSrRUOSOB43xxVtn2ujqn1iGWxqgQWhw3b73f9K+ng9kpKL9m3/rzTux21ipEH77DeWH1KwkjuX4mF7fTx7zIUheO0+w0eum+4AHfoD/Gs3Q5H+AMRsaHSIRtfscOgBootcaTgOE=
   bucket: iamleonid
   acl: public_read
   local_dir: build
   skip_cleanup: true
 branches:
   only:
-    - master
+  - master
