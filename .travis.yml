@@ -9,9 +9,8 @@ script:
   - ls build
 deploy:
   provider: s3
-  access_key_id: AKIASSYM3Q5YYQV6LLHG
-  secret_access_key:
-    secure: lfOSSJomdn+bofqxNdUeRnse6sYJzJxi2xMftPSo0gE58952X7GV5933/DBE3gbS8njbi29+BdqlEQ5oDDYhkdVf324T8AXM5Fi7mGdTxB3OJRqhqS86jvKBPNjXFTXY3pvPNSauO5wkN4xDjX+2KUwwAz6mCvwjrGapjeoEa1zVHZGeH60BHyLoF3qT2/KCSRYApUMJg4R/ClT5Asgg2YUAOK/Jqg/3qWdKgkrPaCaWjjA6G7hQRpbK7xD2Sx32560M2tWJ4BCvaUXjy164aTXrM+X/l54/W+/aEdsqeE5GxeddYHgQH/1UdXUxaNg1low1HRixO7q4UMaaVa4pzra4o6Gzmsibq37L6Z6WyO4gSzSAlxbwaKOieXufTWBmf8QwSsvoPf5UalB22gzvuqFi/8yaipO9Tx888uh7f/fnf+hsuMFCiRTuoNM0t0Wpaaf1fLt1v7H6wPHYXnTuGCuOj9WXkzC4aCVN+QjZF8NUe11VvSO8LFNWw+t7GVPc9neyekM+urUdWCNhQ0HM/Cf+s/+Wic2AGcSdH8TWgPm5YUrSwsg85Xkf4uFrRaf/GSHuWpNZ/V7WnIo6Fa50OfY46VfmRHO6UfGCkC2klNwNqQN0UPE/w2D4kDtYfusVDPqKjoIjjOYbYMab/O/3ldE54koQ3l21bpWOVfdWplw=
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: iamleonid
   acl: public_read
   local_dir: build
