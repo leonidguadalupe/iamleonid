@@ -7,8 +7,7 @@ import {
   whiteColor,
   blackColor,
   grayColor,
-  hexToRgb,
-  cardTitle,
+  hexToRgb
 } from "assets/jss/material-kit-pro-react.js";
 
 const timelineStyle = theme => ({

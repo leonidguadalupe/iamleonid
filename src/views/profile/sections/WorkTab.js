@@ -21,16 +21,14 @@ const workHistoryObjects = [
     color:"info",
     title: "Assistant Manager of Software Engineering",
     year: "2017 - present",
-    description: "Tech stack: Python(Falcon/Django), Javascript(ReactJS, Apollo),\
-      PostgresQL, GraphQL, Redis, Docker, Kubernetes, Asterisk, Twilio, Nginx, Debian",
+    description: "Tech stack: Python(Falcon/Django), Javascript(ReactJS, Apollo), PostgresQL, GraphQL, Redis, Docker, Kubernetes, Asterisk, Twilio, Nginx, Debian",
   },
   {
     img: workImage1,
     color:"warning",
     title: "Senior Software Engineer",
     year: "2016-2017",
-    description: "Tech stack: Python(Django/Flask), Javascript(ReactJS, jQuery), \
-      PostgresQL, RestAPI, Redis, Asterisk, Twilio, Nginx, Debian",
+    description: "Tech stack: Python(Django/Flask), Javascript(ReactJS, jQuery), PostgresQL, RestAPI, Redis, Asterisk, Twilio, Nginx, Debian",
   },
   {
     img: workImage1,
@@ -57,11 +55,11 @@ const workHistoryObjects = [
 export default function WorkTabComponent(props) {
   const classes = props.classes;
   var stories = [];
-  workHistoryObjects.map(function(workObject, key){
+  workHistoryObjects.forEach(function(workObject, key){
     stories.push({
       badgeColor: workObject.color,
       badgeIcon: Work,
-      inverted: key % 2 == 0,
+      inverted: key % 2 === 0,
       body: (
         <GridContainer className={classes.workhistory}>
           <GridContainer>

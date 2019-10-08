@@ -6,8 +6,6 @@ import PropTypes from "prop-types";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // core components
-import Badge from "components/Badge/Badge.js";
-
 import timelineStyle from "assets/jss/components/timelineStyle.js";
 
 function Timeline({ ...props }) {

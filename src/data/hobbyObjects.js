@@ -21,10 +21,7 @@ const hobbyObjects = [
       "md": 6,
       "href": "#games",
       "title": "Games",
-      "description": "I love playing computer games.\
-      A few titles would be: Zelda(BOTW), Apex Legends\
-      WorldWarZ, AutoChess, PUBG and Mario Odyssey. I love\
-      other shooters as well!",
+      "description": "I love playing computer games. A few titles would be: Zelda(BOTW), Apex Legends, WorldWarZ, AutoChess, PUBG and Mario Odyssey. I love other shooters as well!",
       "img": games
   },
   {

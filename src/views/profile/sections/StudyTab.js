@@ -14,16 +14,13 @@ export default function StudyTabComponent(props) {
       img: studyImage1,
       title: "Masters in Management",
       year: "2014",
-      description: "I studied management for 2 years. However I haven't finished\
-        this as I was too busy with work. All that's left here is to finish the \
-        strategic plan(non-thesis) for the final requirement.",
+      description: "I studied management for 2 years. However I haven't finished this as I was too busy with work. All that's left here is to finish the strategic plan(non-thesis) for the final requirement.",
     },
     {
       img: studyImage1,
       title: "Bachelor in Computer Science",
       year: "2012",
-      description: "I was studying in the campus and around 2010 worked as a freelance\
-        programmer which extended my degree",
+      description: "I was studying in the campus and around 2010 worked as a freelance programmer which extended my degree",
     }
     
   ]

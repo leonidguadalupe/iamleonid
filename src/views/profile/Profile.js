@@ -4,7 +4,6 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons components
-import Extension from "@material-ui/icons/Extension";
 import School from "@material-ui/icons/School"
 import Terrain from "@material-ui/icons/Terrain";
 import Work from "@material-ui/icons/Work";
@@ -24,7 +23,6 @@ import profileComponentStyle from "assets/jss/profileComponentStyle.js";
 import HobbySectionComponent from "./sections/HobbyTab.js";
 import StudyTabComponent from "./sections/StudyTab.js";
 import WorkTabComponent from "./sections/WorkTab.js";
-import TechTabComponent from "./sections/TechTab.js";
 
 const useStyles = makeStyles(profileComponentStyle);
 
