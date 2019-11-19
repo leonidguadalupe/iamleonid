@@ -19,14 +19,14 @@ const workHistoryObjects = [
   {
     img: workImage1,
     color:"info",
-    title: "Assistant Manager of Software Engineering",
+    title: "Assistant Manager of Project Engineering",
     year: "2017 - present",
     description: "Tech stack: Python(Falcon/Django), Javascript(ReactJS, Apollo), PostgresQL, GraphQL, Redis, Docker, Kubernetes, Asterisk, Twilio, Nginx, Debian",
   },
   {
     img: workImage1,
     color:"warning",
-    title: "Senior Software Engineer",
+    title: "Senior Project Engineer",
     year: "2016-2017",
     description: "Tech stack: Python(Django/Flask), Javascript(ReactJS, jQuery), PostgresQL, RestAPI, Redis, Asterisk, Twilio, Nginx, Debian",
   },

@@ -84,7 +84,7 @@ export default function ProfileViewComponent() {
                 with a young team of professionals. After 2 years, I left to finish
                 my undergrad and worked as a freelancer at the same time. Now, I'm
                 continuously growing in a corporate environment. I dream of living 
-                and working in Japan in the future.{" "}
+                and working overseas in the future.{" "}
             </p>
             <Clearfix />
           </div>
