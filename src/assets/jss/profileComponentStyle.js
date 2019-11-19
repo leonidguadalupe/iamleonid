@@ -27,7 +27,7 @@ import {
     },
     cardTitle: {
       ...cardTitle,
-      color: whiteColor + "  !important"
+      color: grayColor + "  !important"
     },
     profile: {
       textAlign: "center",
